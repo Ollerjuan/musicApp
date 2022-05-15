@@ -1,0 +1,25 @@
+body {
+  background: url(https://i.etsystatic.com/28298500/r/il/edb9cd/3417011597/il_1588xN.3417011597_ffsm.jpg);
+  animation: scroll-background 1s linear infinite;
+}
+
+h1{
+  color: aqua;
+  width:500px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 250px;
+  font-size: 50px ;
+  text-shadow: 5px 5px black;
+}
+.Login{
+  color: aqua;
+  width:500px;
+  margin: 0 auto;
+  text-align: center; 
+  font-size: 25px;
+}
+#login{
+  color: aqua;
+}
+
