@@ -1,9 +1,13 @@
 body {
-  /* background: url(https://i.etsystatic.com/28298500/r/il/edb9cd/3417011597/il_1588xN.3417011597_ffsm.jpg); */
+  background: url(https://i.etsystatic.com/28298500/r/il/edb9cd/3417011597/il_1588xN.3417011597_ffsm.jpg);
   animation: scroll-background 1s linear infinite;
   background-color: gray;
 }
+#new-color{
+  background: black;
 
+    
+}
 h1{
   color: aqua;
   width:500px;

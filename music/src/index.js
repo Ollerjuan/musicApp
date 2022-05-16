@@ -1,23 +1,25 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import './index.css';
-// import { BrowserRouter as Router } from "react-router-dom"
-// import {Routes, Route} from "react-router-dom"
-import Home from './Home';
-import Login from './Components/Login';
-import Main from './Components/Main'
+import App from './App';
+import { BrowserRouter as Router } from "react-router-dom"
+import {Routes, Route} from "react-router-dom"
+import Main from './pages/Main';
+import Home from "./pages/Home.js"
+import Nav from "./Components/Nav"
 
+// wraping app comonenet w router comoent to enbale router features
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <Router>
-      <Routes> */}
-        <Home />
-        <Login />
-        <Main />
-      {/* </Routes>
-    </Router> */}
+    <Router>
+      <Nav />
+      <Routes>
+        <Route path="/" element={<App />} >
+          <Route index element={<Home />} />
+          <Route id="new-color" path="/main" element={<Main />} />
+        </Route>
+      </Routes>
+    </Router>
   </React.StrictMode>
-  
-  // document.getElementById('root')
 );
