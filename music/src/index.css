@@ -3,9 +3,10 @@ body {
   animation: scroll-background 1s linear infinite;
   background-color: gray;
 }
-#new-color{
-  background: black;
-
+.nav{
+background-color: #ABDED7;
+color:navy;
+opacity: .8;
     
 }
 h1{
