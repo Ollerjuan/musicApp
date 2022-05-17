@@ -1,9 +1,9 @@
 import React from "react"
-import {Link} from "react-router-dom"
+// import {Link} from "react-router-dom"
 
 
 const Login = () => {
-    const CLIENT_ID= "14b01a092c544820bcdf006502843b5e"
+        const CLIENT_ID= "14b01a092c544820bcdf006502843b5e"
         const REDIRECT_URI = "http://localhost:3000"
         const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize"
         const RESPONSE_TYPE = "token"

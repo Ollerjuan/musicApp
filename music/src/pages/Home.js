@@ -5,6 +5,7 @@ const Home = () =>  {
         <div>
         <h1> Welcome To Music Finder</h1>  
             <Login />
+         
         </div>
     )      
 }
