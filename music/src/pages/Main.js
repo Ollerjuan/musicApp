@@ -3,21 +3,25 @@ import axios from "axios"
 
 const Main = () => { 
     const url = `https://api.spotify.com/v1/search`
-    const [token, setTokem] = useState('')
+    const [token, setToken] = useState('')
     let urlParams = new URLSearchParams(window.location.hash.replace(''))
+
 
     useEffect (() => {
         // hash is given to us after we have enterd the login info in the url 
         let token = window.localStorage.getItem('token')
-        let hash = window.location.hash
-
-        //if
-        if (token !== '' && hash){
-            let url = window.location
-            let access_token = new URLSearchParams(url.search).get('access_token')
-        }
+        let hash = window.location.hash    
+        
+        let url = window.location
+        let access_token = new URLSearchParams(url.search).get('access_token')
+        
+            window.location.hash = ""
+            window.localStorage.setItem('token', token)
+        setToken(token)
     
     })
+
+
         
         
         
@@ -29,7 +33,7 @@ const Main = () => {
         <div className="Main">
             <form>
                 <input type= "text"/>
-                    <button type="submit"> Search </button>
+                    <button id="search" type="submit"> Search </button>
               
             </form>
        </div>
