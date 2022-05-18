@@ -1,11 +1,12 @@
 import React from "react"
-import Login from "./Login";
+import Main from "./Main";
+
 const Home = () =>  {
     return(
         <div>
         <h1> Welcome To Music Finder</h1>  
-            <Login />
-         
+           
+         <Main />
         </div>
     )      
 }

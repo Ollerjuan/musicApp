@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios"
+import Login from "./Login";
 
 const Main = () => { 
     const url = `https://api.spotify.com/v1/search`
@@ -7,19 +8,20 @@ const Main = () => {
     let urlParams = new URLSearchParams(window.location.hash.replace(''))
 
 
-    useEffect (() => {
-        // hash is given to us after we have enterd the login info in the url 
-        let token = window.localStorage.getItem('token')
-        let hash = window.location.hash    
-        
-        let url = window.location
-        let access_token = new URLSearchParams(url.search).get('access_token')
-        
-            window.location.hash = ""
-            window.localStorage.setItem('token', token)
-        setToken(token)
+//     useEffect (() => {
+//         // hash is given to us after we have enterd the login info in the url 
     
-    })
+//         const hash = window.location.hash   
+//         console.log(hash.split("&"))
+// }, [])
+        // let url = window.location
+        // let access_token = new URLSearchParams(url.search).get('access_token')
+        
+        //     window.location.hash = ""
+        //     window.localStorage.setItem('token', token)
+        // setToken(token)
+    
+
 
 
         
@@ -31,6 +33,7 @@ const Main = () => {
         
     return(
         <div className="Main">
+            <Login />
             <form>
                 <input type= "text"/>
                     <button id="search" type="submit"> Search </button>
@@ -40,9 +43,7 @@ const Main = () => {
     )
 }
 
-
-
-
+export default Main;
 
 
 
@@ -60,4 +61,4 @@ const Main = () => {
         
 //     )
 // }
-    export default Main;
+   

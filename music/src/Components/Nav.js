@@ -8,8 +8,8 @@ const Nav = (props) => {
             <Link to="/">
                 <div>Home</div>
             </Link>
-            <Link to="/Main">
-                <div>Main</div>
+            <Link to="/Logout">
+                <div>Logout</div> 
             </Link>
            
         </div>
