@@ -31,3 +31,9 @@ h1{
 #search{
   color:red;
 }
+#button {
+  margin-left: 610px;
+}
+#search{
+  margin-left: 0px;
+}

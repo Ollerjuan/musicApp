@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios"
 import Login from "./Login";
-import { useParams } from "react-router";
+// import { useParams } from "react-router";
 
 const Main = () => { 
     const [searchKey, setSearchKey] = useState('')
@@ -23,29 +23,51 @@ const Main = () => {
         }
     }, [])
 
+    const getArtist = async (searchArtist, token) => {   
+        const {data} = await axios.get("https://api.spotify.com/v1/search", {
+            headers: {
+                Authorization: `Bearer ${token}`
+            },
+            params: {
+                q: searchArtist,
+                type: "artist"
+            }
+        })
+        console.log(data.artists.items)
 
-    const getArtist = async (token) => {
-        let res = await axios.use("https://api.spotify.com/v1/search")
-        let {data} = res.data
-        setArtist.item.use
-            headers.searchKey.Authorization = 'Bearer + token';
-        }
-        setArtist.items(data.artists)
+        setArtist(data.artists.items)
+        // console.log(artists)
+        // let {data} = res.data 
 
-    
-    console.log(getArtist)
+        // setArtist.item.use(async function(config){
+        //     config.headers.searchKey.Authorization = 'Bearer + token';
+        // })
+        // setArtist(data.artists)
+    }
+    const handleChange = (e) => {
+        setArtist(e.target.value) 
+    }
 
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        console.log(artists)
+        getArtist(artists, 'token here')
+    }
+
+    // const test = getArtist('token here')
+    // console.log(test)
+//render artist from url
         
         
         return(
             <div className="Main">
             <Login />
-            <form onSubmit={getArtist}>
-                <input type= "text" onchange={(e) => setSearchKey((e).target.value)}/>
+            <form onSubmit={handleSubmit}>
+            
+                <input id="button" type= "text" onChange={handleChange} value={artists}/>
                     <button id="search" type="submit"> Search </button>
               
             </form>
-       
        </div>
     )
 }
@@ -57,7 +79,7 @@ export default Main;
 // export function backgroundColor() {
 //     return (
 //         <div>
-                // <div style={{ backgroundColor: "#4D8581", width: "98%", maxHeight: "690px"}}>
+//                 <div style={{ backgroundColor: "#4D8581", width: "98%", maxHeight: "690px"}}>
 //                 <h2 style={{ padding: "10px 20px"}}></h2>
                 
 //                 <div style={{ backgroundColor: "#ABDED7", width: "20%", minHeight: "590px",}}>

@@ -7,7 +7,7 @@ import {Routes, Route} from "react-router-dom"
 import Main from './pages/Main';
 import Home from "./pages/Home.js"
 import Nav from "./Components/Nav"
-import Login from './pages/Login';
+// import Login from './pages/Login';
 
 
 // wraping app comonenet w router comments to enbale router features
