@@ -6,19 +6,7 @@ const Login = () => {
         const redirect_uri = "http://localhost:3000"
         const authorization_endPoint = "https://accounts.spotify.com/authorize"
         const response_type = "token"
-        // const [token, setToken] = useState("")
-
-
-        // const getArtist = async (token) => {
-        //     let res = await axios.use("https://api.spotify.com/v1/search")
-            
-        //     let {data} = res.data.use(async function (config){
-        //         config.headers.Authorization = 'Bearer' + token  ;
-        //     },
-        //     this.setArtist.items({data})
-    
-        // }
-      
+   
        
 
         
