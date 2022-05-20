@@ -1,4 +1,4 @@
-# musicApp
+# Music Finder
 ## Project Description 
  •  I will be creating a music finder app that allows user to search artist from the Spotify API using a bearer token 
 
