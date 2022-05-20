@@ -1,25 +1,15 @@
 # musicApp
 ## Project Description 
- •  I will be creating a music finder app that allows user to search artist from the Spotify API 
+ •  I will be creating a music finder app that allows user to search artist from the Spotify API using a bearer token 
 
 ## Link to the API you plan to use
 
 https://api.spotify.com/v1/search
 
 
-## Visual of your component hierarchy
+## Visual of your component 
 
-<img width="323" alt="Screen Shot 2022-05-14 at 9 23 36 PM" src="https://user-images.githubusercontent.com/101987493/168454773-0e6d0146-b553-4f89-9a2b-2bac5d458ae0.png">
-
-
-
-## Wire Frames
-
-1.  User will click the "login here" button and it will link them to the Spotify Authorization page to login.
-<img width="426" alt="Screen Shot 2022-05-14 at 9 25 43 PM" src="https://user-images.githubusercontent.com/101987493/168454795-c523cada-49fb-44a5-8993-c2f9db8099ee.png">
-
-2. User will be able to use the search button to find an artist.
-<img width="390" alt="Screen Shot 2022-05-14 at 9 25 51 PM" src="https://user-images.githubusercontent.com/101987493/168454815-d5013020-92be-41b3-97b1-547e39937ee9.png">
+<img width="1394" alt="Screen Shot 2022-05-20 at 8 10 28 AM" src="https://user-images.githubusercontent.com/101987493/169540152-13d7bfb9-35d2-44e0-88fb-930c20c2eb65.png">
 
 
 ## User Stories
@@ -30,7 +20,7 @@ https://api.spotify.com/v1/search
 
 ### MVP Goals
 •  functional search bar
-•  function api 
+•  functional api 
 •  search generate what the user requested 
 
 
@@ -39,6 +29,5 @@ https://api.spotify.com/v1/search
 > audio api
 > play button (play/skip/ back)
 
-<img width="359" alt="Screen Shot 2022-05-13 at 1 47 00 PM" src="https://user-images.githubusercontent.com/101987493/168455003-08e8f0b6-0537-46cc-bfd3-09fd78ec2817.png">
 
 
