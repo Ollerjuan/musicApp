@@ -7,10 +7,11 @@
 https://api.spotify.com/v1/search
 
 
-## Visual of your component 
+## Visuals 
 
 <img width="1394" alt="Screen Shot 2022-05-20 at 8 10 28 AM" src="https://user-images.githubusercontent.com/101987493/169540152-13d7bfb9-35d2-44e0-88fb-930c20c2eb65.png">
 
+<img width="1057" alt="Screen Shot 2022-05-20 at 9 01 22 AM" src="https://user-images.githubusercontent.com/101987493/169544965-58d9e170-3c37-4aff-a08e-b39c8f48a7af.png">
 
 ## User Stories
 •  I want the user to login/signup on there own Spotify account.
